@@ -1,0 +1,274 @@
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section h2.section-head {
+  color: black;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section h2.section-head:after {
+  background: #e74c3c;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 20px auto;
+}
+
+#header {
+  color: white;
+  background-color: rgb(231, 76, 60);
+}
+
+#logo {
+  font-size: 2rem;
+}
+
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu li a {
+  color: #fff;
+  padding: 15px 10px;
+  display: block;
+}
+
+#menu li a:hover {
+  background: #c0392b;
+}
+
+#banner {
+  background: url("../images/Edited-alvin-engler-bIhpiQA009k-unsplash.jpg")
+    no-repeat 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-title {
+  padding-top: 5rem;
+}
+
+.banner-title h1 {
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+}
+
+.banner-title p.lead {
+  color: #fff;
+  background: rgb(231, 76, 60);
+}
+
+.service-box {
+  text-align: center;
+}
+
+.service-box i {
+  color: rgb(231, 76, 60);
+  font-size: 60px;
+  margin-bottom: 2rem;
+}
+
+#testimonials {
+  color: #fff;
+  background: url(../images/nicolas-thomas-PLDkBHbM3Hc-unsplash.jpg) no-repeat 0
+    0;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0;
+  position: relative;
+}
+
+#testimonials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 73, 94, 0.7);
+  z-index: 5;
+}
+
+#testimonials h2.section-head {
+  position: relative;
+  z-index: 15;
+}
+
+.testimonial img,
+.testimonial p,
+.author,
+.author-company {
+  position: relative; /* making sure all child elements are on top */
+  z-index: 15;
+}
+
+.testimonial img {
+  height: 3.3rem;
+  width: 3.3rem;
+  border-radius: 50%;
+}
+
+.news-post img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.news-post h3 {
+  font-size: 1.35rem;
+}
+
+.news-post h3 a {
+  color: #e74c3c;
+}
+
+.post-date {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+#news img {
+  height: 7rem;
+  width: 90%;
+}
+
+.post-date:before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f133"; /* Unicode for the calendar icon */
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.readmore {
+  color: #e74c3c;
+}
+
+.readmore:after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f101";
+  font-weight: 600;
+  margin-left: 5px;
+  color: #e74c3c;
+}
+
+#footer-sidebar {
+  color: #fff;
+  background-color: #34495e;
+  padding: 20px 0;
+}
+
+.footer-widget h4:after {
+  content: "";
+  background-color: #fff;
+  display: block;
+  width: 50px;
+  height: 2px;
+  height: 2px;
+  margin: 5px 0;
+}
+
+.footer-widget a {
+  color: #fff;
+}
+
+.latest-news {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.latest-news li:before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f101";
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+#footer {
+  color: #fff;
+  background-color: #2c3e50;
+  padding: 10px 0;
+}
+
+#social-icons {
+  color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#social-icons li {
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+#social-icons li a {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+  .news-post {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  #logo {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  #menu {
+    text-align: center;
+  }
+
+  .banner-title {
+    padding-top: 0;
+  }
+
+  .banner-title h1 {
+    font-size: 1.7rem;
+  }
+
+  .section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .testimonial {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .service-box {
+    margin-bottom: 30px;
+  }
+
+  .footer-widget {
+    margin-bottom: 20px;
+  }
+
+  #footer {
+    text-align: center;
+  }
+
+  #social-icons {
+    margin-top: 10px;
+  }
+}
