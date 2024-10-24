@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Homepage Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+  <style>
+    /* Styles for your header, nav, and other sections */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation bar styling */
+    .navbar {
+      background-color: #f8f8f8;
+      padding: 10px;
+      position: relative;
+      z-index: 1000; /* Ensures navbar stays on top */
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-right: 20px;
+      position: relative;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Mega menu styling */
+    .mega-menu {
+      display: none; /* Hidden by default */
+      position: absolute;
+      top: 46px; /* Adjust based on navbar height */
+      width: 100%;
+      height: 300px;
+      background-color: #f9f9f9;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      z-index: 999; /* Ensure it appears on top */
+    }
+
+    /* Show mega menu when hovering on the li or on the mega-menu itself */
+    .navbar ul li:hover .mega-menu,
+    .mega-menu:hover {
+      display: block;
+    }
+
+    .mega2 {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .mega2 ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .mega2 ul li {
+      padding: 5px 0;
+    }
+
+    .mega2 ul li a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .mega2 ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Swiper container styling */
+    .swiper-container {
+      width: 100%;
+      height: 400px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li>
+        <a href="#">iPad</a>
+        <div id="nav" class="mega-menu">
+          <section class="mega2">
+            <ul>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Shop the Latest</a></li>
+              <li><a href="#">Mac</a></li>
+              <li><a href="#">iPad</a></li>
+              <li><a href="#">iPhone</a></li>
+              <li><a href="#">Apple Watch</a></li>
+              <li><a href="#">Accessories</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Quick Links</a></li>
+              <li><a href="#">Find a Store</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Ways to Buy</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Shop Special Stores</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Business</a></li>
+            </ul>
+          </section>
+        </div>
+      </li>
+      <!-- Add other items for the navigation bar with similar functionality -->
+      <li><a href="#">Mac</a></li>
+      <li><a href="#">iPhone</a></li>
+      <li><a href="#">Apple Watch</a></li>
+      <li><a href="#">Accessories</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+  <script>
+    // Swiper initialization
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "1.5",
+      centeredSlides: true,
+      spaceBetween: 15,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop: true,
+    });
+  </script>
+
+</body>
+</html>
