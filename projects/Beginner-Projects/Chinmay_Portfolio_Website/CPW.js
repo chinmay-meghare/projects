@@ -20,7 +20,7 @@ window.onscroll = () =>{
         let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height){
-            navLinks.forEach.apply(links =>{
+            navLinks.forEach(links =>{
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id+ ']').classList.add('active');
             });
@@ -29,7 +29,6 @@ window.onscroll = () =>{
 }
 
 // ===sticky navbar===
-
 let header = document.querySelector('header');
 header.classList.toggle('sticky', window.scrollY >100);
 
